@@ -1,5 +1,7 @@
 .page-container {
-    margin: 30px;
+    margin: auto;
+    width: max-content;
+    margin-top: 4em;
 }
 
 body {

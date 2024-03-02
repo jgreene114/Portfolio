@@ -8,7 +8,7 @@
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
     color: #fff;
-    padding: 8em 0 5em 0;
+    padding: 2em 0 1em 0;
     text-align: center;
 }
 
@@ -55,4 +55,37 @@
 
 .example-work-card {
     /*max-width: 615px;*/
+}
+
+#banner.content-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .button.alt {
+    /*margin: 50px;*/
+        color: white;
+        font-size: 1.25em;
+        border: 1px solid white;
+    }
+
+    .contact-info-parent {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+    .contact-info-container {
+        display: flex;
+    }
+    .headshot-photo {
+        width: 150px;
+        margin-left: 50px;
+        margin-right: 20px;
+
+    }
 }
