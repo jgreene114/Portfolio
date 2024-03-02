@@ -1,0 +1,45 @@
+<head>
+    <title>Joseph Greene Portfolio - SF Trees Visualization</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/hw1.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+</head>
+<body>
+<div class="page-container">
+    <h1 style="text-wrap: nowrap">When are trees planted around San Francisco?</h1>
+    <div style="display: flex; flex-direction: row; align-items: center; gap: 20px">
+        <div>
+            <header>Trees Planted per Month</header>
+            <svg id="tree-bar-chart" height="400" width="300" ></svg>
+            <div class="citation-container" style="color: transparent">
+                <p>Empty Space</p>
+                <p style="font-size: .8em" >Empty Space</p>
+                <p style="font-size: .6em" >Empty Space</p>
+            </div>
+        </div>
+        <div>
+            <header>Average Monthly Temperature</header>
+            <svg id="temperature-bar-chart" height="400" width="300" ></svg>
+            <div class="citation-container">
+                <p>Source: <a href="https://www.weather.gov/wrh/climate?wfo=mtr" target="_blank">National Weather Service</a></p>
+                <p style="font-size: .8em" >San Francisco Bay Area, CA (1991 - 2020)</p>
+                <p style="font-size: .6em" >Accessed on Feb 6, 2024.</p>
+            </div>
+        </div>
+        <div>
+            <header>Average Monthly Precipitation</header>
+            <svg id="precipitation-bar-chart" height="400" width="300" ></svg>
+            <div class="citation-container">
+                <p>Source: <a href="https://www.weather.gov/wrh/climate?wfo=mtr" target="_blank">National Weather
+                    Service</a></p>
+                <p style="font-size: .8em">San Francisco Bay Area, CA (1991 - 2020)</p>
+                <p style="font-size: .6em">Accessed on Feb 6, 2024.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="src/hw1-visualization.js"></script>
+</body>
+</html>

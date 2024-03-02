@@ -1,0 +1,58 @@
+/* Banner */
+
+#banner {
+    background-attachment: scroll, fixed;
+    background-color: #666;
+    background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    color: #fff;
+    padding: 8em 0 5em 0;
+    text-align: center;
+}
+
+#banner :last-child {
+    margin-bottom: 0;
+}
+
+#banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
+    color: #fff;
+}
+
+#banner h2 {
+    font-size: 3.5em;
+    line-height: 1em;
+    margin: 0 0 0.5em 0;
+    padding: 0;
+}
+
+#banner p {
+    font-size: 1.25em;
+    margin-bottom: 1.75em;
+}
+
+.contact-info-container {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.contact-info {
+    display: inline-block;
+    font-size: 1.3em;
+    /*margin-top: 10px; !* Adjust the space below your name *!*/
+}
+
+.headshot-photo {
+    width: 20%;
+    border-radius: 50%;
+    /*height: 50px;*/
+}
+
+.separator {
+    margin: 0 3px; /* Adjust the spacing around the vertical line */
+}
+
+.example-work-card {
+    /*max-width: 615px;*/
+}
