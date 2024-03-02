@@ -61,6 +61,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px;
 
     .button.alt {
     /*margin: 50px;*/
@@ -77,15 +78,29 @@
     }
 
     h2 {
-        font-size: 2.5em;
+        font-size: 2.0em;
     }
     .contact-info-container {
         display: flex;
     }
     .headshot-photo {
-        width: 150px;
+        width: 120px;
         margin-left: 50px;
         margin-right: 20px;
 
     }
+}
+
+body.content-page, html.content-page {
+    height: 100%;
+}
+#page-wrapper.content-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#content-iframe {
+    /*width: 100%;*/
+    flex-grow: 1;
 }
