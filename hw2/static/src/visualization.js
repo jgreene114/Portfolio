@@ -520,7 +520,7 @@ const createSummaryInfo = async function (div, subSelection, subSelectionOrder, 
         let artistHref = artist['external_urls']['spotify']
         let artistImage = artist["images"][artist["images"].length - 1]
         htmlTitle += ""
-            + `<a href='${artistHref}'>`
+            + `<a target="_blank" href='${artistHref}'>`
             + `   <img src='${artistImage['url']}' height='${artistImage['height'] / 2}' width='${artistImage['height'] / 2}' alt='${artistName} on Spotify'>`
             + `</a>`
     }
@@ -532,7 +532,7 @@ const createSummaryInfo = async function (div, subSelection, subSelectionOrder, 
         let artist = artistData[artistName]
         let aHref = artist['external_urls']['spotify']
         htmlTitle += `<div class='summary-info-artist-line' style="color: ${colorScale(subSelectionOrder)}">By `
-            + `<a class="custom-link" style="color: ${colorScale(subSelectionOrder)}" href="${aHref}">${titleCase(artistName)}</a>`
+            + `<a class="custom-link" target="_blank" style="color: ${colorScale(subSelectionOrder)}" href="${aHref}">${titleCase(artistName)}</a>`
             + `</div>`
     }
 
@@ -555,7 +555,7 @@ const createSummaryInfo = async function (div, subSelection, subSelectionOrder, 
             let aData = artistData[d[0]]
             let aHref = aData['external_urls']['spotify']
 
-            artistsStr += `<span><a class="custom-link" style="color: #1ED760" href="${aHref}">${d[0]}</a>, </span>`
+            artistsStr += `<span><a target="_blank" class="custom-link" style="color: #1ED760" href="${aHref}">${d[0]}</a>, </span>`
         })
         artistsStr = artistsStr.slice(0, -9) + "</span>"
 
