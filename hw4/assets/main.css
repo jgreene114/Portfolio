@@ -1,0 +1,143 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#map {
+    position: fixed !important;
+    /*bottom: 0; */
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: fixed !important;
+    /*right: 0;*/
+    /*width: 100%;*/
+    /*z-index: 0;*/
+}
+
+.leaflet-control-attribution {
+    bottom: 140px !important;
+}
+
+
+
+#parent-chart-container {
+    position: fixed;
+    right: 0;
+    /*bottom: 0;*/
+    width: 27%;
+    min-width: 300px;
+    max-width: 500px;
+    height: 100%;
+    pointer-events: none;
+}
+
+.domain, line {
+    stroke: #F86858;
+}
+
+.tick {
+    text {
+        fill: #A12B2B !important;
+        color: #A12B2B !important;
+    }
+}
+
+.chart-div {
+    background-color: rgba(229, 198, 198, 0.53);
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    margin: 10px;
+    pointer-events: auto;
+}
+
+.chart-div .mini-chart-point {
+    pointer-events: none;
+}
+
+/* todo: style chart titles here*/
+.chart-div h1 {
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    margin: 10px 10px 0px;
+    /*position: fixed;*/
+}
+
+.chart-title-div .tooltip {
+    margin: 0px 10px 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: fixed;
+    /*opacity: 0;*/
+}
+
+.chart-title-div {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.mode {
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 8px;
+    color: #6b7280;;
+}
+
+.mode-title{
+    padding: 5px;
+    justify-content: center;
+    align-content: start;
+    font-size: larger;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    /* pointer-events: stroke; */
+}
+
+#map-mode-dropdown{
+    background: #e98282d1;
+    border-radius: 5px;
+    border: none;
+    color: #A12B2B;
+    padding: 5px;
+    font-weight: 500;
+}
+
+#map-mode-dropdown-container {
+    /*position: absolute;*/
+    /*top: 10px;*/
+    /*left: 50px;*/
+    margin: 10px 0 0 10px;
+    background-color: #f6a6847a;
+    z-index: 1000;
+    padding: 5px;
+    border-radius: 10px;
+    pointer-events: auto;
+    margin-left: 50px;
+    /*height:*/
+    /*height: 100px;*/
+    /*width: 100px;*/
+}
+
+
+/* .leaflet-control-container .leaflet-top.leaflet-left {
+    display: flex;
+
+} */
+
+#header-bar {
+    margin: 0;
+    background-image: url('header2.png');
+    background-size: cover; 
+    background-position: center;
+    padding: 10px;
+    height: 120px;
+    z-index: 100000;
+    background-color: darkorange;
+    color: white;
+    font-weight: bolder;
+    font-family: Arial;
+    font-size: 100px;
+}
