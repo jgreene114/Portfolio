@@ -53,8 +53,29 @@
     margin: 0 3px; /* Adjust the spacing around the vertical line */
 }
 
+.inner-example-work-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will push the button to the bottom */
+    /*height: 100%;*/
+}
+
+.example-work-launch-button {
+    flex: 1; /* Allows the content to expand and push the button to the bottom */
+    align-items: flex-end;
+}
+
 .example-work-card {
-    /*max-width: 615px;*/
+    /*flex: 1;*/
+
+}
+
+.example-work-container {
+    row-gap: 40px;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(2, 1fr); !* Creates two columns of equal width *!*/
+    /*grid-gap: 20px; !* Adjust the gap between the cards as needed *!*/
 }
 
 #banner.content-page {
